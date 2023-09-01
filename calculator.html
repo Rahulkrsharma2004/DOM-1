@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <input type="text" id="inp1" placeholder="Wright here">
+    <input type="text" id="inp2" placeholder="Wright here">
+    <button onclick="b1()">Add</button>
+    <button onclick="b2()">Subtarct</button>
+    <button onclick="b3()">Multiply</button>
+    <button onclick="b4()">Divide</button>
+</body>
+<script>
+    let Input1 = document.getElementById("inp1")
+    let Input2 = document.getElementById("inp2")
+    function b1(){
+        let num1 = Input1.value;
+        let num2 = Input2.value;
+        let result = +num1 +  +num2;
+        alert(result);
+    }
+    function b2(){
+        let num1 = Input1.value;
+        let num2 = Input2.value;
+        let result = +num1 -  +num2;
+        alert(result);
+    }
+    function b3(){
+        let num1 = Input1.value;
+        let num2 = Input2.value;
+        let result = +num1 *  +num2;
+        alert(result);
+    }
+    function b4(){
+        let num1 = Input1.value;
+        let num2 = Input2.value;
+        let result = +num1 /  +num2;
+        alert(result);
+    }
+</script>
+</html>
